@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <link href="public/css/main.css" type="text/css" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Lora|Playfair+Display|Gentium+Basic" rel="stylesheet">
+   
+   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+   <script src="public/app.js"></script>
+</head>
+
+<body>
+   <div id="headImage">
+      <p>THE<br>
+         <span>eddy</span>
+      </p>
+      
+   </div>
+   <div id="sideInfoHead">
+      <p>342 E. 6<span>TH</span></p>
+      <p>ST. •</p>
+      <p>646.555.9884</p>
+   </div>
+   <nav id="topNav">
+      <ul>
+         <li id="hoursLink">H O U R S</li>
+         <li id="reservationsLink">R E S E R V A T I O N S</li>
+         <li id="menusLink">M E N U</li>
+         <li id="contactLink">C O N T A C T</li>
+         <li id="aboutLink">A B O U T</li>
+         <li id="pressLink">P R E S S</li>
+         <li id="galleryLink">G A L L E R Y</li>
+      </ul>
+   </nav>
+   
+   
+   
+   <div id="schedule">
+      <h1>KITCHEN & BAR HOURS</h1>
+      <div id="days">
+         <ul>
+            <li>
+               <p>S<br>
+                  u<br>
+                  n</p>
+               <p>5:30<span>pm</span></p>
+               <p>⮟</p>
+               <p>10<span>pm</span> (Kitchen)</p>
+               <p>12<span>am</span> (Bar)</p>
+            </li>
+            <li>
+               <p>M<br>o<br>n</p>
+               <p>5:30<span>pm</span></p>
+               <p>⮟</p>
+               <p>10<span>pm</span> (Kitchen)</p>
+               <p>12<span>am</span> (Bar)</p>
+            </li>
+            <li>
+               <p>T<br>u<br>e</p>
+               <p>5:30<span>pm</span></p>
+               <p>⮟</p>
+               <p>10<span>pm</span> (Kitchen)</p>
+               <p>12<span>am</span> (Bar)</p>
+            </li>
+            <li>
+               <p>W<br>e<br>d</p>
+               <p>5:30<span>pm</span></p>
+               <p>⮟</p>
+               <p>10<span>pm</span> (Kitchen)</p>
+               <p>12<span>am</span> (Bar)</p>
+            </li>
+            <li>
+               <p>T<br>h<br>u</p>
+               <p>5:30<span>pm</span></p>
+               <p>⮟</p>
+               <p>11<span>pm</span> (Kitchen)</p>
+               <p>1<span>am</span> (Bar)</p>
+            </li>
+            <li>
+               <p>F<br>r<br>i</p>
+               <p>5:30<span>pm</span></p>
+               <p>⮟</p>
+               <p>11<span>pm</span> (Kitchen)</p>
+               <p>1<span>am</span> (Bar)</p>
+            </li>
+            <li>
+               <p>S<br>a<br>t</p>
+               <p>5:30<span>pm</span></p>
+               <p>⮟</p>
+               <p>11<span>pm</span> (Kitchen)</p>
+               <p>1<span>am</span> (Bar)</p>
+            </li>         
+         </ul>
+      </div>
+      
+      <div id="privateDining">
+      <h1>PRIVATE DINING</h1>
+         <p>The Eddy is available to reserve as a private dining space for up to 32 people. Our space is filled with rich wood and vintage finishes throughout, exposed brick walls and a bar area. We are able to work accommodate seated dinners and cocktail parties up to 50 people. Please contact us for pricing and additional information at <a href="mailto:krisgoorhuis@gmail.com">krisgoorhuis@gmail.com</a>.</p>
+      </div>
+   </div>
+     
+   <div id="reservations">
+      <h2>RESERVATIONS</h2>
+      <p>Reservations for up to 6 people can be made by telephone (646-555-9884), e-mail <a href="mailto:krisgoorhuis@gmail.com">krisgoorhuis@gmail.com</a>, or below through Reservibot</p>
+      <div><p>R</p><span>RESERVATIONS</span></div>
+   </div>
+   <div id="pleaseNote">
+      <h4>PLEASE NOTE</h4>
+      <p>For parties of 5 or more, a credit card is required to reserve the table; in case of cancellation within 24 hours of the reservation, a $25 per person fee will be charged. For parties of 7 or more, please call us at 646-555-9884, or email us at krisgoorhuis@gmail.com to inquire about availability. We request that parties of 7 or more participate in our tasting menu. We will do our best to accommodate all requests. We look forward to seeing you at The Eddy! For press inquires, please contact Kris Goorhuis at krisgoorhuis@gmail.com</p>
+   </div>
+   
+   <div id="menus">
+      <div id="whiteFilter"></div>
+      <div id="menusContainerOuter">
+         <h1>M E N U S</h1>  
+         <div id="menusContainerInner">
+            <div>
+               <p id="dinner">DINNER</p>
+            </div>
+            <div id="menuDivider"></div>
+            <div>
+               <p id="drinks">DRINKS</p>
+            </div>
+         </div>         
+      </div> 
+      
+      <div id="menusPopout">
+         <div id="closeMenus">&#10005</div>
+         <h1>Menu</h1>
+         <ul id="menusPopoutNav">
+            <li id="foodButton" class="hoverPointer">FOOD</li>
+            <li><span>|</span></li>
+            <li id="drinksButton" class="hoverPointer">DRINK</li>
+         </ul>
+         
+         <ul id="foodSubmenus">
+            <li id="aLaCarte" class="hoverPointer">A LA CARTE</li>
+            <li><span>|</span></li>
+            <li id="tastingMenu" class="hoverPointer">TASTING MENU</li>
+         </ul>
+         <ul id="drinksSubmenus"> 
+            <li id="cocktails" class="hoverPointer">COCKTAILS</li>
+            <li><span>|</span></li>
+            <li id="wine" class="hoverPointer">WINE</li>
+         </ul>
+         
+         
+         <div id="entireDinnerMenu">
+            <div class="sharedDinnerHeading">
+               <p>Please note that our menu changes on a regular basis. The menu below is a representation of what The Eddy offers on a nightly basis.</p>
+            </div>
+            <div class="menusPopoutColumn">
+               <div id="menuLogo">
+                  <p>THE<br>
+                  <span>eddy</span>
+                  </p>
+               </div>
+               
+               <div id="aLaCarteMenuPage">
+                  <div class="simpleMenuLayout">
+                     <div>
+                        <p>Radish, Goat Cheese, Puffed Quinoa</p>
+                        <p>9</p>
+                     </div>
+                     <div>
+                        <p>Chicken Liver Pate, Apple Butter</p>
+                        <p>15</p>
+                     </div>
+                     <div>
+                        <p>Pickled Mussels, Herbs, Toasted Miche</p>
+                        <p>13</p>
+                     </div>
+                     <div>
+                        <p>Wild Clams, Togarashi Rice, Chili Oil</p>
+                        <p>11</p>
+                     </div>
+                     <br>
+                     <div>
+                        <p>Yellowtail, Shaved Fennel, Seaweed Pickles</p>
+                        <p>16</p>
+                     </div>
+                     <div>
+                        <p>Roasted Carrots, Walnut Butter, Chicken Skin, Cumin</p>
+                        <p>17</p>
+                     </div>
+                     <div>
+                        <p>Charred Arctic Char, Pickled Allium Broth, Aioli, Dill</p>
+                        <p>15</p>
+                     </div>
+                     <div>
+                        <p>Pastrami Beef Tongue, Yogurt, Pickles, Horseradish</p>
+                        <p>16</p>
+                     </div>
+                     <br>
+                     <div>
+                        <p>Ricotta Gnocchi, Brown Butter, Herbs</p>
+                        <p>22</p>
+                     </div>
+                     <div>
+                        <p>Duroc Pork Steak, Polenta, Braised Kale</p>
+                        <p>27</p>
+                     </div>
+                     <div>
+                        <p>Cod, Crisp Potato, Cabbage, Mustard, Tarragon</p>
+                        <p>31</p>
+                     </div>
+                     <div>
+                        <p>Grass Fed Ribeye, Beans, Scallion Ash</p>
+                        <p>36</p>
+                     </div>
+                     <br>
+                     <div>
+                        <p>Spaghetti Squash, Smoked Cheddar, Maple</p>
+                        <p>9</p>
+                     </div>
+                     <div>
+                        <p>Glazed Mushrooms, Malt Vinegar Powder</p>
+                        <p>13</p>
+                     </div>
+                     
+                  </div>
+               </div>
+               <div id="tastingMenuPage">
+                  <div id="tastingMenuLayout">
+                     <div>
+                        <h3>FIVE COURSE TASTING MENU 75
+                           <p><i>Wine Pairing 45</i></p>
+                        </h3>
+                     </div>
+                     <div>
+                        <p>Yellowtail, Shaved Fennel, Seaweed Pickles</p>
+                        <p><i>Domaine Rolet Cremant du Jura Brut 2010</i></p>
+                        <p>***</p>
+                     </div>
+                     <div>
+                        <p><span>TO SHARE:</span></p>
+                        <p>Roasted Carrots, Walnut Butter, Cumin</p>
+                        <p>&</p>
+                        <p>Seared Octopus, Saffron-Ajo Blanco, Swiss Chard, Lemon</p>
+                        <p><i>Domaine Mittnacht, Pinot Blanc 2014</i></p>
+                        <p>***</p>
+                     </div>
+                     <div>
+                        <p>Charred Arctic Char, Pickled Allium Broth, Aioli, Dill</p>
+                        <p><i>Domaine Huards, Cheverny Rouge, Envol 2014</i></p>
+                        <p>***</p>
+                     </div>
+                     <div>
+                        <p><span>CHOICE OF:</span></p>
+                        <p>Skate Wing, Pomme Puree, Asparagus, Chili, Lardo</p>
+                        <p><i>Val de Mer, Chablis 2014</i></p>
+                        <p><span>or</span></p>
+                        <p>Grass Fed Ribeye, Beans, Scallion Ash</p>
+                        <p><i>Bukoyli, Egri Bikaver 2013</i></p>
+                        <p>***</p>
+                     </div>
+                     <div>
+                        <p><span>CHOICE OF:</span></p>
+                        <p>Cardamom Panna Cotta, Mandarin-Honey Ice, Basil, Sea Salt</p>
+                        <p><span>or</span></p>
+                        <p>Olive Oil Cake, Rhubarb, Chamomile-Honey Milk</p>
+                        <p><i>Jean-Luc Pasquet, Pineau des Charentes NV</i></p>
+                     </div>
+                  </div>
+                  <div id="dashedLine"></div>
+                  <div id="tastingMenuPageFooter">
+                     <p>Please inform us of any allergies or dietary restrictions.<br>Participation of the entire party is required.</p>
+                     <p id="participation"><span>PARTICIPATION OF THE ENTIRE PARTY IS REQUIRED. THE TASTING MENU IS REQUIRED FOR PARTIES OF 7 OR MORE.</span></p>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+         <div id="entireDrinksMenu">
+            <div class="menusPopoutColumn">
+               <div id="menuLogo">
+                  <p>THE<br>
+                  <span>eddy</span>
+                  </p>
+               </div>
+               <div id="cocktailsMenuPage">
+                     <div id="cocktailsMenuLayout">
+                        <div>
+                           <h4>Highland Gimlet</h4>
+                           <p>CITADELLE GIN, ZIRBENZ PINE LIQUER, LIME CORDIAL</p>
+                        </div>
+                        <div>
+                           <h4>The Cure</h4>
+                           <p>PIG'S NOSE SCOTCH, SMOKED PINEAPPLE, CHAMOMILE, LEMON, ALMOND</p>
+                        </div>
+                        <div>
+                           <h4>Spiced Plum Punch</h4>
+                           <p>SANTA TERESA 1796 SOLERA RUM, BOUKMAN WILD SPICE RUM, PLUM SHRUB, LIME, ANGOSTURA BITTERS</p>
+                        </div>
+                        <div>
+                           <h4>Pear Williams</h4>
+                           <p>PURKHART PEAR EAU DE VIE, RANSOM OLD TIM GIN, AMARO NONINO, DOLIN DRY, ORANGE BITTERS</p>
+                        </div>
+                        <div>
+                           <h4>Dutch 75</h4>
+                           <p>BATAVIA ARRACK VAN OOSTEN, PIERRE FERRAND COGNAC, CREMANT DU JURA, CITRUS</p>
+                        </div>
+                        <div>
+                           <h4>Oaxacan Mule</h4>
+                           <p>DEL MAGUEY VIDA MEZCAL, ANCHO-REYES VERDE, GINGER, LIME</p>
+                        </div>
+                        <div>
+                           <h4>Ginger Lady</h4>
+                           <p>PISCO EL GOBERNADOR, GINGER, LEMON, EGG WHITE</p>
+                        </div>
+                        <div>
+                           <h4>The Honey Badger</h4>
+                           <p>RITTENHOUSE RYE, YELLOW CHARTREUSE, GRAN CLASSICO, ANGOSTURA, ORANGE BITTERS</p>
+                        </div>
+                        <p>All Cocktails $15</p>
+                     </div>
+                  
+               </div>
+               <div id="wineMenuPage">
+                  <div class="simpleMenuLayout">
+                     <h2>Sparkling</h2>
+                     <div>
+                        <p>R.H. Courtier, Brut NV <span>PINOT NOIR, CHARDONNAY</span></p>
+                        <p>95</p>
+                     </div>
+                     <div>
+                        <p>Ployez-Jacquemart, Extra Brut Rose NV <span>PINOT NOIR, PINOT MEUNIER, CHARDONNAY</span></p>
+                        <p>95</p>
+                     </div>
+                     <div>
+                        <p>Hure Freres, Brut Reserve, Invitation NV <span>CHARDONNAY, PINOT NOIR, PINOT MEUNIER</span></p>
+                        <p>105</p>
+                     </div>
+                     <div>
+                        <p>Stephane Coquillette, Blanc de Noirs Brut, Grand Cru, Les Cles NV <span>PINOT NOIR</span></p>
+                        <p>110</p>
+                     </div>
+
+                     <h2>White</h2>
+                     <h3>Burgundy</h3>
+                     <div>
+                        <p>Domaine Morey Coffinet, Bourgogne 2014 <span>CHARDONNAY</span></p>
+                        <p>70</p>
+                     </div>
+                     <div>
+                        <p>Pascal Prunier-onheur, Monthelie, Les Toisieres 2014<span>CHARDONNAY</span></p>
+                        <p>90</p>
+                     </div>
+                     <div>
+                        <p>Domaine Grossot, Chablis ler Cru, Mont de Milieu 2014<span>CHARDONNAY</span></p>
+                        <p>95</p>
+                     </div>
+
+                     <h3>France</h3>
+                     <div>
+                        <p>Domaine de la Bergerie, Savennieres, Clos Le Grand Beaupreau 2013 <span>CHENIN BLANC | LOIRE</span></p>
+                        <p>60</p>
+                     </div>
+                     <div>
+                        <p>Jean Francois Ganevat, Les Chalasses Marne Bleues 2012 <span>SAVAGNIN | JURA</span></p>
+                        <p></p>
+                     </div>
+
+                     <h2>Red</h2>
+                     <h3>Bordeleaux</h3>
+                     <div>
+                        <p>Chateau Brane-Cantenac, Margaux, Baron de Brane 2010 <span>CABERNET SAUVINGNON, MERLOT</span></p>
+                        <p>80</p>
+                     </div>
+                     <div>
+                        <p>Chateau Saint-Pierre, Esperit de Saint-Pierre, Saint-Julien 2009 <span>CABERNET SAUVINGNON, MERLOT</span></p>
+                        <p>85</p>
+                     </div>
+                     <h3>Burgundy</h3>
+                     <div>
+                        <p>Marcel Lapierre, Morgon 2015 <span>GAMAY</span></p>
+                        <p>65</p>
+                     </div>
+                     <div>
+                        <p>Domaine Marguis D'Angerville, Volnay ler Cru 2012 <span>PINOT NOIR</span></p>
+                        <p>170</p>
+                     </div>
+                     <div>
+                        <p>Dominique Mugneret, Nuit-Saint Georges, Aux Boudots ler Cru 2010 <span>PINOT NOIR</span></p>
+                        <p>185</p>
+                     </div>
+                     <h3>France</h3>
+                     <div>
+                        <p>Domaine Berthet-Bondet, Trio 2015 <span>TROUSSEAU, POULSARD, PINOT NOIR | JURA</span></p>
+                        <p>65</p>
+                     </div>
+                     <div>
+                        <p>Felsina, Fontalloro 2009 <span>SANGIOVESE | TUSCANY</span></p>
+                        <p>125</p>
+                     </div>
+                  </div>
+
+               </div>
+            </div>
+
+         </div>
+      </div>
+   </div>
+   <div id="contact">
+      <div id="grayFilter"></div>
+      <div id="mapInfoColumn">
+         <h3>NORTHWEST VILLAGE</h3>
+         <h1>342</h1>
+         <h2>E. 6th St.</h2>
+         <div>&#9966</div>
+         <p>646-555-9884</p>
+         <p><span>krisgoorhuis@gmail.com</span></p>
+         
+         <a href="https://www.google.com/maps/place/Oregon/@44.053932,-125.0265857,6z/data=!3m1!4b1!4m5!3m4!1s0x54936e7c9b9f6a55:0x7d4c65db7a0bb876!8m2!3d43.8041334!4d-120.5542012" target="_blank">see map</a>
+      </div>
+   </div>
+   <div id="theRestaurant">
+      <div>
+         <h5>THE</h5>
+         <h1>RESTAURANT</h1>
+         <p>Nestled in the heart of the Northwest Village, The Eddy is a charming neighborhood restaurant that puts a creative spin on refined, seasonal fare. Drawing flavors and inspiration from around the globe, Chef Brendan McHale’s menu spotlights seasonal produce and local proteins. The Eddy also boasts a diverse and accessible wine list and original cocktails served in an eclectic array of glasses, tea cups and copper goblets. The space was designed by the very talented and amiable Michael J. Groth.</p>
+      </div>
+      
+   </div>
+   <div id="portraits">
+      <div>
+         <img src="/public/images/portrait1.jpeg">
+         <p>John Doe</p>
+         <p><span>Executive Chef & Owner</span></p>
+      </div>
+      <div>
+         <img src="/public/images/portrait2.jpeg">
+         <p>Mister Frank</p>
+         <p><span>Wine Director & Owner</span></p>
+      </div>
+      <div>
+         <img src="/public/images/portrait3.jpeg">
+         <p>Jane Doe</p>
+         <p><span>Director of Operations</span></p>
+      </div>
+
+   </div>
+   <div id="press">
+      <h1>P R E S S</h1>
+      <div id="reviewsContainer">
+         <div class="reviewBox">
+            <a>
+            <h3>Press Outlet</h3>
+            <h4>Article Title About Tasty Foods</h4>
+            <div>
+               <p>05</p>
+               <p><span>&#9585</span></p>
+               <p>May</p>
+            </div>
+            </a>
+         </div><div class="reviewBox">
+            <a>
+            <h3>Press Outlet</h3>
+            <h4>Article Title About Tasty Foods</h4>
+            <div>
+               <p>05</p>
+               <p><span>&#9585</span></p>
+               <p>May</p>
+            </div>
+            </a>
+         </div><div class="reviewBox">
+            <a>
+            <h3>Press Outlet</h3>
+            <h4>Article Title About Tasty Foods</h4>
+            <div>
+               <p>05</p>
+               <p><span>&#9585</span></p>
+               <p>May</p>
+            </div>
+            </a>
+         </div><div class="reviewBox">
+            <a>
+            <h3>Press Outlet</h3>
+            <h4>Article Title About Tasty Foods</h4>
+            <div>
+               <p>05</p>
+               <p><span>&#9585</span></p>
+               <p>May</p>
+            </div>
+            </a>
+         </div><div class="reviewBox">
+            <a>
+            <h3>Press Outlet</h3>
+            <h4>Article Title About Tasty Foods</h4>
+            <div>
+               <p>05</p>
+               <p><span>&#9585</span></p>
+               <p>May</p>
+            </div>
+            </a>
+         </div><div class="reviewBox">
+            <a>
+            <h3>Press Outlet</h3>
+            <h4>Article Title About Tasty Foods</h4>
+            <div>
+               <p>05</p>
+               <p><span>&#9585</span></p>
+               <p>May</p>
+            </div>
+            </a>
+         </div><div class="reviewBox">
+            <a>
+            <h3>Press Outlet</h3>
+            <h4>Article Title About Tasty Foods</h4>
+            <div>
+               <p>05</p>
+               <p><span>&#9585</span></p>
+               <p>May</p>
+            </div>
+            </a>
+         </div><div class="reviewBox">
+            <a>
+            <h3>Press Outlet</h3>
+            <h4>Article Title About Tasty Foods</h4>
+            <div>
+               <p>05</p>
+               <p><span>&#9585</span></p>
+               <p>May</p>
+            </div>
+            </a>
+         </div><div class="reviewBox">
+            <a>
+            <h3>Press Outlet</h3>
+            <h4>Article Title About Tasty Foods</h4>
+            <div>
+               <p>05</p>
+               <p><span>&#9585</span></p>
+               <p>May</p>
+            </div>
+            </a>
+         </div>
+      </div>
+      
+     
+        
+   </div>
+   <div id="photoGallery">
+      <div id="galleryContainer">
+         <div class="image">
+            <a href="#"><div></div></a>
+            <img src="public/images/food1.jpeg">
+         </div>
+         <div class="image">
+            <a href="#"><div></div></a>
+            <img src="public/images/food2.jpeg">
+         </div>
+         <div class="image">
+            <a href="#"><div></div></a>
+            <img src="public/images/food3.jpg">
+         </div>
+         <div class="image">
+            <a href="#"><div></div></a>
+            <img src="public/images/food4.jpeg">
+         </div>
+         <div class="image">
+            <a href="#"><div></div></a>
+            <img src="public/images/food5.jpeg">
+         </div>
+         <div class="image">
+            <a href="#"><div></div></a>
+            <img src="public/images/food6.jpeg">
+         </div>
+         <div class="image">
+            <a href="#"><div></div></a>
+            <img src="public/images/food7.jpeg">
+         </div>
+         <div class="image">
+            <a href="#"><div></div></a>
+            <img src="public/images/food8.jpeg">
+         </div>
+         <div class="image">
+            <a href="#"><div></div></a>
+            <img src="public/images/food9.jpeg">
+         </div>
+         <div class="image">
+            <a href="#"><div></div></a>
+            <img src="public/images/food10.jpg">
+         </div>
+         <div class="image">
+            <a href="#"><div></div></a>
+            <img src="public/images/food11.jpg">
+         </div>
+         <div class="image">
+            <a href="#"><div></div></a>
+            <img src="public/images/food12.jpeg">
+         </div>
+      </div>
+   </div>
+</body>
+</html>
