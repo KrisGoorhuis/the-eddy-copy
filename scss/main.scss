@@ -89,9 +89,13 @@ nav li {
 
 @media screen and (max-width: 768px) {
    #headImage {
+      width: 768px;
       p {
          margin-right: 115px;
       }
+   }
+   #topNav ul {
+      display: none;
    }
 }
 
@@ -136,6 +140,10 @@ nav li {
    }
 }
 
+.dayRow {
+   display: none;
+}
+
 #privateDining {
    display: flex;
    flex-direction: column;
@@ -148,6 +156,39 @@ nav li {
 
 a {
       color: black;
+}
+
+@media screen and (max-width: 768px) {
+   #days ul {
+      font-size: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+         li {
+            width: 100%;
+            height: 100px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding-left: 60px;
+            padding-right: 60px;
+            border: none;
+            border-bottom: 1px dashed gray;
+         p {
+            margin: 10px;
+         }
+      }
+   }
+   .dayColumn {
+      display: none;
+   }
+   .dayRow {
+      display: block;
+      font-size: 12px;
+   }
+   .scheduleArrow {
+      transform: rotate(270deg);
+   }
 }
 
 #reservations {
@@ -229,7 +270,7 @@ a {
    width: 100%;
    height: 650px;
    position: relative;
-   z-index: 1;
+   z-index: 14;
    font-family: 'Playfair Display';
 }
 
@@ -279,7 +320,7 @@ a {
    top: 0px;
    height: 100%;
    width: 100%;
-   z-index: 10;
+   z-index: 15;
    background-color: rgba(255, 255, 255, 0.95);
    display: none;
    flex-direction: column;
@@ -560,6 +601,8 @@ a {
    height: 800px;
    color: white;
    font-family: 'lora';
+   position: relative;
+   z-index: 1;
 }
 
 #grayFilter {
@@ -573,7 +616,7 @@ a {
 
 #mapInfoColumn {
    position: relative;
-   z-index: 2;
+   z-index: 1;
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -658,9 +701,9 @@ a {
 #portraits {
    background-color: white;
    height: 200px;
-   padding-left: 200px;
    padding-bottom: 200px;
    display: flex;
+   justify-content: space-around;
    
    div {
       width: 200px;
@@ -679,6 +722,12 @@ a {
    }
    span {
       color: rgba(0, 0, 0, 0.5);
+   }
+}
+
+@media screen and (max-width: 768px) {
+   #portraits {
+      
    }
 }
 
@@ -748,6 +797,7 @@ a {
    flex-direction: column;
    justify-content: center;
    align-items: center;
+   text-align: center;
    font-family: 'playfair display';
    border-right: 1px solid rgba(0, 0, 0, 0.1);
    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -781,6 +831,7 @@ a {
       display: flex;
       justify-content: center;
       align-items: center;
+      margin: auto;
       p {
          color: rgba(0, 0, 0, 0.2);
          font-size: 15px;
@@ -797,5 +848,76 @@ a {
       &:hover {
          cursor: pointer;
       }
+   }
+}
+
+#photoBrowser {
+   position: fixed;
+   top: 0px;
+   background-color: rgba(0, 0, 0, 0.5);
+   width: 100%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   
+}
+
+#closePhotoBrowser {
+   position: fixed;
+   top: 0px;
+   right: 20px;
+   font-size: 70px;
+   font-weight: 100;
+   color: rgba(255, 255, 255, 0.7);
+   &:hover {
+      cursor: pointer;
+   }
+}
+
+#photoBrowserCenterContainer {
+   height: 600px;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+#browseLeft {
+   height: 70%;
+   width: 300px;
+   
+   p {
+      
+      color: rgba(255, 255, 255, 0.5);
+      transform: rotate(180deg);
+      font-size: 60px;
+      width: 100px;
+      height: 100%;
+      margin: 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      float: left;
+   }
+}
+
+#browseRight {
+   height: 70%;
+   width: 300px;
+   &:hover {
+      cursor: pointer;
+   }
+   
+   p {
+      color: rgba(255, 255, 255, 0.5);
+      transform: rotate(0deg);
+      font-size: 60px;
+      width: 100px;
+      height: 100%;
+      margin: 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      float: right;
    }
 }

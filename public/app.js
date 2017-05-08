@@ -128,4 +128,10 @@ $(document).ready(function() {
       $('#wineMenuPage').css('display', 'flex');
    });
    
+   // Photo browser
+   $('#photoBrowser').on('click', function() {
+      
+   });
+   
+   
 });
