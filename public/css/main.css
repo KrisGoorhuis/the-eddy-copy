@@ -575,7 +575,7 @@ a {
   height: 200px;
   padding-bottom: 200px;
   display: flex;
-  justify-content: space-around; }
+  justify-content: center; }
   #portraits div {
     width: 200px;
     text-align: center;
