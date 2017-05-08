@@ -210,8 +210,7 @@ a {
   #pleaseNote h5 {
     margin-bottom: 0px; }
   #pleaseNote p {
-    width: 50%;
-    min-width: 700px;
+    width: 500px;
     text-align: center; }
 
 #menus {
@@ -578,8 +577,7 @@ a {
   justify-content: center; }
   #portraits div {
     width: 200px;
-    text-align: center;
-    margin-right: 50px; }
+    text-align: center; }
   #portraits img {
     width: 160px;
     height: 160px;
