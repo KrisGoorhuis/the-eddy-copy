@@ -211,6 +211,10 @@ a {
     width: 500px;
     text-align: center; }
 
+@media screen and (max-width: 768px) {
+  p {
+    width: 100%; } }
+
 #menus {
   background-image: url(/public/images/pexels-photo-169685.jpeg);
   background-size: cover;
@@ -586,6 +590,10 @@ a {
     margin: 4px; }
   #portraits span {
     color: rgba(0, 0, 0, 0.5); }
+
+@media screen and (max-width: 768px) {
+  #portraits {
+    flex-direction: column; } }
 
 #photoGallery {
   background-color: #231f20;

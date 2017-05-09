@@ -260,6 +260,12 @@ a {
    }
 }
 
+@media screen and (max-width: 768px) {
+   p {
+      width: 100%;
+   }
+}
+
 #menus {
    background-image: url(/public/images/pexels-photo-169685.jpeg);
    background-size: cover;
@@ -725,7 +731,7 @@ a {
 
 @media screen and (max-width: 768px) {
    #portraits {
-      
+      flex-direction: column;
    }
 }
 
