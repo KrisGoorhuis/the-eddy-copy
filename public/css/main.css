@@ -34,8 +34,8 @@ body {
 
 @media screen and (max-width: 768px) {
   #headImage {
-    background-position-x: 50%;
-    background-position-y: 100%; } }
+    width: 100%;
+    height: auto; } }
 
 #sideInfoHead {
   position: fixed;
