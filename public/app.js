@@ -1,3 +1,9 @@
+(function() {
+   var app = angular.module('myApp', ['photoGallery', 'myDirectives']);
+   
+})();
+
+
 $(document).ready(function() {
 
    function resizeNavMargin() {

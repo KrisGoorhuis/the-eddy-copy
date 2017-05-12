@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myApp">
 <head>
    <link href="public/css/main.css" type="text/css" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Lora|Playfair+Display|Gentium+Basic" rel="stylesheet">
@@ -7,8 +7,12 @@
    <meta name="viewport" content="initial-scale=1">
    <meta name="viewport" content="width=device-width">
    
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
    <script src="public/app.js"></script>
+   
+   <script src="public/scripts/photo-gallery.js"></script>
+   <script src="public/scripts/directives.js"></script>
 </head>
 
 <body>
@@ -540,76 +544,19 @@
             </div>
             </a>
          </div>
-      </div>
-      
-     
-        
+      </div> 
    </div>
-   <div id="photoGallery">
+   
+   <!-- I wanted to use the index of an image to open the popup browser thing. So here's where Angular was pushed in.-->
+   <div id="photoGallery" ng-controller="PhotoGalleryController as gallery">
       <div id="galleryContainer">
-         <div class="image">
-            <a href="#"><div></div></a>
-            <img src="public/images/food1.jpeg">
-         </div>
-         <div class="image">
-            <a href="#"><div></div></a>
-            <img src="public/images/food2.jpeg">
-         </div>
-         <div class="image">
-            <a href="#"><div></div></a>
-            <img src="public/images/food3.jpg">
-         </div>
-         <div class="image">
-            <a href="#"><div></div></a>
-            <img src="public/images/food4.jpeg">
-         </div>
-         <div class="image">
-            <a href="#"><div></div></a>
-            <img src="public/images/food5.jpeg">
-         </div>
-         <div class="image">
-            <a href="#"><div></div></a>
-            <img src="public/images/food6.jpeg">
-         </div>
-         <div class="image">
-            <a href="#"><div></div></a>
-            <img src="public/images/food7.jpeg">
-         </div>
-         <div class="image">
-            <a href="#"><div></div></a>
-            <img src="public/images/food8.jpeg">
-         </div>
-         <div class="image">
-            <a href="#"><div></div></a>
-            <img src="public/images/food9.jpeg">
-         </div>
-         <div class="image">
-            <a href="#"><div></div></a>
-            <img src="public/images/food10.jpg">
-         </div>
-         <div class="image">
-            <a href="#"><div></div></a>
-            <img src="public/images/food11.jpg">
-         </div>
-         <div class="image">
-            <a href="#"><div></div></a>
-            <img src="public/images/food12.jpeg">
+         <div class="image" ng-repeat="image in gallery.images">
+            <a ng-click="gallery.openBrowserToSelection($index)"><div></div></a>
+            <img ng-src="{{image}}">
          </div>
       </div>
+      <photo-browser ng-show="gallery.checkBrowserOpen()"></photo-browser>
    </div>
-   <!-- // Angular?
-   <div id="photoBrowser">
-      <div id="closePhotoBrowser">&#10005</div>
-      <div id="photoBrowserCenterContainer">
-         <div id="browseLeft">
-            <p>&#10148</p>
-         </div>
-         <div id="browseRight">
-            <p>&#10148</p>
-         </div>
-         
-      </div>
-   </div>
-   -->
+   
 </body>
 </html>

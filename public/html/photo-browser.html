@@ -1,0 +1,19 @@
+
+<!-- This is the thing that pops up when you click on an image tile. Lets you scroll through them side to side. -->
+
+<div id="photoBrowser">
+   <div id="closePhotoBrowser" ng-click="gallery.closeBrowser()">&#10005</div>
+   <div id="photoBrowserCenterContainer">
+      <div id="browseLeft" ng-click="gallery.moveLeft()">
+         <p>&#10148</p>
+      </div>
+      <div id="browseRight" ng-click="gallery.moveRight()">
+         <p>&#10148</p>
+      </div>
+      <div id="photoLineupContainer"> <!-- TODO: make it wrap to end at the beginning -->
+         <div id="photoLineup" ng-repeat="image in gallery.images">
+            <img ng-src="{{image}}">
+         </div>
+      </div>
+   </div>
+</div>
