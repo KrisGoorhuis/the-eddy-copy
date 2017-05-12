@@ -37,9 +37,12 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-   #headImage {
-      width: 100%;
-      height: '';
+   html {
+      overflow: hidden;
+   }
+   body {
+      overflow-y: scroll;
+      -webkit-overflow-scrolling:touch;
    }
 }
 
