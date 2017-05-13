@@ -18,6 +18,13 @@ $(document).ready(function() {
       resizeNavMargin();
    });
    
+   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+   // You are in mobile browser
+      var windowHeight = $(window).height();
+      var newMarginTop = windowHeight-120;
+      $('#schedule').css('margin-top', newMarginTop + "px");
+   }
+   
    
    // Nav controls
    var scrollSpeed = 500;
