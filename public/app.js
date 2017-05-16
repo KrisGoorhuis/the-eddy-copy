@@ -20,6 +20,7 @@ $(document).ready(function() {
    
    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
    // You are in mobile browser
+      alert("You're on mobile!");
       var windowHeight = $(window).height();
       var newMarginTop = windowHeight-120;
       $('#schedule').css('margin-top', newMarginTop + "px");

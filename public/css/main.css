@@ -749,7 +749,7 @@ a {
   #galleryContainer {
     width: 100%; }
   .image {
-    width: 98%;
+    width: 100%;
     height: auto;
     margin-left: 0px;
     margin-right: 0px; }
@@ -835,3 +835,11 @@ a {
   #photoLineup img {
     width: 40vw;
     object-fit: cover; }
+
+@media screen and (max-width: 768px) {
+  #photoBrowser {
+    background-color: rgba(0, 0, 0, 0.9); }
+  #photoLineupContainer {
+    justify-content: center; }
+  #photoLineup img {
+    width: 100vw; } }
