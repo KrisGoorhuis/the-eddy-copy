@@ -557,6 +557,8 @@ a {
 @media screen and (max-width: 768px) {
   #mapInfoColumn div {
     display: none; }
+  #mapInfoColumn h2 {
+    margin-bottom: 30px; }
   #contact {
     height: 600px; }
   #grayFilter {
@@ -598,7 +600,8 @@ a {
   height: 200px;
   padding-bottom: 200px;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  align-items: center; }
   #portraits div {
     width: 200px;
     text-align: center; }
@@ -616,7 +619,10 @@ a {
 @media screen and (max-width: 768px) {
   #portraits {
     flex-direction: column;
-    margin: 100px; } }
+    margin: 100px; }
+  img {
+    height: 80%;
+    width: 80%; } }
 
 #photoGallery {
   background-color: #231f20;

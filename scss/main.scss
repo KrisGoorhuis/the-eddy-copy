@@ -695,6 +695,9 @@ a {
       div {
          display: none;
       }
+      h2 {
+         margin-bottom: 30px;
+      }
    }
    
    #contact {
@@ -752,6 +755,7 @@ a {
    padding-bottom: 200px;
    display: flex;
    justify-content: center;
+   align-items: center;
    
    div {
       width: 200px;
@@ -776,6 +780,10 @@ a {
    #portraits {
       flex-direction: column;
       margin: 100px;
+   }
+   img {
+      height: 80%;
+      width: 80%;
    }
 }
 
