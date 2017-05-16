@@ -615,7 +615,8 @@ a {
 
 @media screen and (max-width: 768px) {
   #portraits {
-    flex-direction: column; } }
+    flex-direction: column;
+    margin: 100px; } }
 
 #photoGallery {
   background-color: #231f20;
