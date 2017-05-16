@@ -142,7 +142,8 @@ a {
     #schedule h1 {
       margin: 0px; }
   #days {
-    margin-top: 0px; }
+    margin-top: 0px;
+    padding-top: 0px; }
   #days ul {
     font-size: 20px;
     display: flex;
