@@ -174,7 +174,7 @@ a {
       flex-direction: column;
       align-items: center;
          li {
-            width: 100%;
+            width: 95%;
             height: 100px;
             display: flex;
             flex-direction: row;
@@ -195,6 +195,12 @@ a {
    }
    .scheduleArrow {
       transform: rotate(270deg);
+   }
+   
+   #privateDining {
+      p {
+         width: 95%;
+      }
    }
 }
 
