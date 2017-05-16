@@ -270,7 +270,7 @@ a {
 @media screen and (max-width: 768px) {
    #pleaseNote {
       p {
-         width: 100%;
+         width: 95%;
       }
       
    }
@@ -710,6 +710,14 @@ a {
       p {
          font-size: 18px;
          line-height: 24px;
+      }
+   }
+}
+
+@media screen & (max-width: 768px) {
+   #theRestaurant {
+      div {
+         width: 95%;
       }
    }
 }
