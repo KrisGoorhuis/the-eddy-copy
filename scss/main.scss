@@ -781,14 +781,14 @@ a {
    #portraits {
       flex-direction: column;
       padding-top: 100px;
+      padding-bottom: 100px;
       width: 100%;
       div {
          margin-bottom: 30px; 
-         width: 80%;
+         width: 90%;
       }
       img {
-         height: 80%;
-         width: 80%;
+         width: 90%;
          margin-bottom: 10px;
       }
    }
