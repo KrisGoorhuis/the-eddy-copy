@@ -627,7 +627,8 @@ a {
       margin-bottom: 30px;
       width: 90%; }
     #portraits img {
-      width: 90%;
+      height: 275px;
+      width: 275px;
       margin-bottom: 10px; } }
 
 #photoGallery {
