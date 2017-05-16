@@ -160,7 +160,7 @@ a {
     width: 95%; } }
 
 #reservations {
-  height: 240px;
+  min-height: 240px;
   font-family: 'Playfair Display';
   background-color: #3b3d3c;
   color: white;
@@ -205,7 +205,7 @@ a {
       align-items: center; }
 
 #pleaseNote {
-  height: 240px;
+  min-height: 240px;
   background-color: #2a2b2a;
   color: white;
   display: flex;
