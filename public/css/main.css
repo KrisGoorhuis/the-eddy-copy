@@ -703,6 +703,8 @@ a {
   #reviewsContainer {
     flex-direction: column; }
   .reviewBox {
+    width: 90%;
+    height: 300px;
     border: none;
     border-top: 1px solid rgba(0, 0, 0, 0.1); }
     .reviewBox:nth-child(0) {
