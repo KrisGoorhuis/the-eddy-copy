@@ -161,6 +161,7 @@ a {
 
 #reservations {
   min-height: 240px;
+  padding-bottom: 10px;
   font-family: 'Playfair Display';
   background-color: #3b3d3c;
   color: white;
@@ -552,6 +553,10 @@ a {
     #mapInfoColumn a:hover {
       background-color: rgba(255, 255, 255, 0.2);
       transition: 0.3s; }
+
+@media screen and (max-width: 768px) {
+  #mapInfoColumn div {
+    display: none; } }
 
 #theRestaurant {
   width: 100%;
