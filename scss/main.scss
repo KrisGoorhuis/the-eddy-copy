@@ -942,6 +942,7 @@ a {
       display: flex;
       jusify-content: center;
       align-items: center;
+      max-width: 768px;
    }
    .image {
       width: 100px;
@@ -1054,5 +1055,10 @@ a {
    
    #browseLeft {
       height: 40%;
+   }
+   #photoLineup {
+      img {
+         width: 100vw;
+      }
    }
 }
