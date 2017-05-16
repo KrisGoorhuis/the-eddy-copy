@@ -268,9 +268,13 @@ a {
 }
 
 @media screen and (max-width: 768px) {
-   p {
-      width: 100%;
+   #pleaseNote {
+      p {
+         width: 100%;
+      }
+      
    }
+   
 }
 
 #menus {
