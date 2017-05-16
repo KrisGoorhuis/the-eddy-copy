@@ -939,13 +939,16 @@ a {
 
 @media screen and (max-width: 768px) {
    .image {
-      width: 100px;
-      height: 100px;
+      width: 98%;
+      height: auto;
       img {
-         width: 100px;
+         width: 100%;
+         height: auto;
       }
    }
 }
+
+
 
 #photoBrowser {
    position: fixed;
@@ -1039,20 +1042,5 @@ a {
    img {
       width: 40vw;
       object-fit: cover;
-   }
-}
-
-@media screen and (max-width: 768px) {
-   #browseRight {
-      height: 40%;
-   }
-   
-   #browseLeft {
-      height: 40%;
-   }
-   #photoLineup {
-      img {
-         width: 100vw;
-      }
    }
 }
