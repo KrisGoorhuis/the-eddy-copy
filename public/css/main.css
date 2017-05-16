@@ -218,7 +218,7 @@ a {
 
 @media screen and (max-width: 768px) {
   #pleaseNote p {
-    width: 100%; } }
+    width: 95%; } }
 
 #menus {
   background-image: url(/public/images/pexels-photo-169685.jpeg);
@@ -575,6 +575,10 @@ a {
     #theRestaurant div p {
       font-size: 18px;
       line-height: 24px; }
+
+@media screen and (max-width: 768px) {
+  #theRestaurant div {
+    width: 95%; } }
 
 #portraits {
   background-color: white;
