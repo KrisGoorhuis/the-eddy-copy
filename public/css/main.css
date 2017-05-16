@@ -94,7 +94,8 @@ nav li {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-family: 'Playfair Display'; }
+  font-family: 'Playfair Display';
+  text-align: center; }
 
 #days {
   padding-top: 30px;
