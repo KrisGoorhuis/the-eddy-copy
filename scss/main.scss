@@ -937,6 +937,21 @@ a {
    }
 }
 
+@media screen and (max-width: 768px) {
+   #galleryContainer {
+      display: flex;
+      jusify-content: center;
+      align-items: center;
+   }
+   .image {
+      width: 100px;
+      height: 100px;
+      img {
+         width: 100px;
+      }
+   }
+}
+
 #photoBrowser {
    position: fixed;
    top: 0px;
@@ -1031,3 +1046,4 @@ a {
       object-fit: cover;
    }
 }
+
