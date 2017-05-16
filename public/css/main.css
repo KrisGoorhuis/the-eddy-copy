@@ -35,9 +35,9 @@ body {
 @media screen and (max-width: 768px) {
   #headImage {
     height: 500px; }
-  p {
-    margin: 0px;
-    font-size: 60px; } }
+    #headImage p {
+      margin: 0px;
+      font-size: 60px; } }
 
 #sideInfoHead {
   position: fixed;
