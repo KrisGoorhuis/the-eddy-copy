@@ -29,7 +29,7 @@ body {
       color: rgba(0, 0, 0, 0.5);
       span {
          margin-left: -4px;
-         font-size: 30px;
+         font-size: 3em;
          font-weight:normal;
          line-height: 14px;
       }
@@ -39,6 +39,10 @@ body {
 @media screen and (max-width: 768px) {
    #headImage {
       height: 500px;
+   }
+   p {
+      margin: 0px;
+      font-size: 60px;
    }
 }
 
@@ -938,9 +942,14 @@ a {
 }
 
 @media screen and (max-width: 768px) {
+   #galleryContainer {
+      width: 100%;
+   }
    .image {
       width: 98%;
       height: auto;
+      margin-left: 0px;
+      margin-right: 0px;
       img {
          width: 100%;
          height: auto;
