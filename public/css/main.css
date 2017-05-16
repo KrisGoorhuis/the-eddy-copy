@@ -593,7 +593,9 @@ a {
 
 @media screen and (max-width: 768px) {
   #theRestaurant div {
-    width: 95%; } }
+    width: 95%; }
+    #theRestaurant div p {
+      text-align: center; } }
 
 #portraits {
   background-color: white;
@@ -630,38 +632,6 @@ a {
       height: 275px;
       width: 275px;
       margin-bottom: 10px; } }
-
-#photoGallery {
-  background-color: #231f20;
-  width: 100%;
-  display: flex;
-  justify-content: center; }
-
-#galleryContainer {
-  width: 80%;
-  max-width: 1200px;
-  text-align: center;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  display: inline-block; }
-
-.image {
-  width: 250px;
-  height: 230px;
-  margin: 15px;
-  padding: 0px;
-  display: inline-block; }
-  .image div {
-    position: absolute;
-    z-index: 2;
-    width: 250px;
-    height: 230px; }
-    .image div:hover {
-      background-color: rgba(0, 0, 0, 0.5); }
-  .image img {
-    width: 250px;
-    height: 230px;
-    object-fit: cover; }
 
 #press {
   background-color: white;
@@ -731,7 +701,44 @@ a {
 
 @media screen and (max-width: 768px) {
   #reviewsContainer {
-    flex-direction: column; } }
+    flex-direction: column; }
+  .reviewBox {
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.1); }
+    .reviewBox:nth-child(0) {
+      border: none; } }
+
+#photoGallery {
+  background-color: #231f20;
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+
+#galleryContainer {
+  width: 80%;
+  max-width: 1200px;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: inline-block; }
+
+.image {
+  width: 250px;
+  height: 230px;
+  margin: 15px;
+  padding: 0px;
+  display: inline-block; }
+  .image div {
+    position: absolute;
+    z-index: 2;
+    width: 250px;
+    height: 230px; }
+    .image div:hover {
+      background-color: rgba(0, 0, 0, 0.5); }
+  .image img {
+    width: 250px;
+    height: 230px;
+    object-fit: cover; }
 
 #photoBrowser {
   position: fixed;
