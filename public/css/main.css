@@ -702,6 +702,10 @@ a {
     .reviewBox a:hover {
       cursor: pointer; }
 
+@media screen and (max-width: 768px) {
+  #reviewsContainer {
+    flex-direction: column; } }
+
 #photoBrowser {
   position: fixed;
   top: 0px;
