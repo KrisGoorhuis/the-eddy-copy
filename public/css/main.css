@@ -619,7 +619,12 @@ a {
 
 @media screen and (max-width: 768px) {
   #portraits {
-    flex-direction: column; }
+    flex-direction: column;
+    margin-top: 100px; }
+  div {
+    margin-bottom: 30px;
+    height: auto;
+    width: 80%; }
   img {
     height: 80%;
     width: 80%; } }
