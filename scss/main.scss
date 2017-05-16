@@ -780,15 +780,16 @@ a {
 @media screen and (max-width: 768px) {
    #portraits {
       flex-direction: column;
-      margin-top: 100px;
+      padding-top: 100px;
+      width: 100%;
       div {
-         margin-bottom: 30px;
-         height: auto;
+         margin-bottom: 30px; 
          width: 80%;
       }
       img {
          height: 80%;
          width: 80%;
+         margin-bottom: 10px;
       }
    }
    

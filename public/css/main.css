@@ -620,14 +620,15 @@ a {
 @media screen and (max-width: 768px) {
   #portraits {
     flex-direction: column;
-    margin-top: 100px; }
+    padding-top: 100px;
+    width: 100%; }
     #portraits div {
       margin-bottom: 30px;
-      height: auto;
       width: 80%; }
     #portraits img {
       height: 80%;
-      width: 80%; } }
+      width: 80%;
+      margin-bottom: 10px; } }
 
 #photoGallery {
   background-color: #231f20;
