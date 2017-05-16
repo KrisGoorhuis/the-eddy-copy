@@ -751,7 +751,8 @@ a {
 
 #portraits {
    background-color: white;
-   height: 200px;
+   min-height: 200px;
+   width: 100%;
    padding-bottom: 200px;
    display: flex;
    justify-content: center;
@@ -779,7 +780,6 @@ a {
 @media screen and (max-width: 768px) {
    #portraits {
       flex-direction: column;
-      margin: 100px;
    }
    img {
       height: 80%;
