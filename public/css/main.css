@@ -556,9 +556,14 @@ a {
 
 @media screen and (max-width: 768px) {
   #mapInfoColumn div {
-    display: none; } }
+    display: none; }
+  #contact {
+    height: 600px; }
+  #grayFilter {
+    height: 600px; } }
 
 #theRestaurant {
+  padding-top: 50px;
   width: 100%;
   height: 400px;
   background-color: white;

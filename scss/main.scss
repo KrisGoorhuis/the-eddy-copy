@@ -696,9 +696,17 @@ a {
          display: none;
       }
    }
+   
+   #contact {
+      height: 600px;
+   }
+   #grayFilter {
+      height: 600px;
+   }
 }
 
 #theRestaurant {
+   padding-top: 50px;
    width: 100%;
    height: 400px;
    background-color: white;
