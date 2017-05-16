@@ -173,6 +173,14 @@ a {
 }
 
 @media screen and (max-width: 768px) {
+   #schedule {
+      padding-top: 20px;
+   }
+   
+   #days {
+      margin-top: 0px;
+   }
+   
    #days ul {
       font-size: 20px;
       display: flex;
