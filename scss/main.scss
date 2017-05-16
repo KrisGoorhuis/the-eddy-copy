@@ -938,12 +938,6 @@ a {
 }
 
 @media screen and (max-width: 768px) {
-   #galleryContainer {
-      display: flex;
-      jusify-content: center;
-      align-items: center;
-      max-width: 768px;
-   }
    .image {
       width: 100px;
       height: 100px;
