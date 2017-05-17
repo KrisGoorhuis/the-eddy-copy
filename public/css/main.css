@@ -64,8 +64,11 @@ body {
   display: none; }
 
 @media screen and (max-width: 768px) {
+  #sideInfoHead {
+    position: absolute; }
   #downArrow {
-    display: block; } }
+    display: block;
+    transform: rotate(180deg); } }
 
 nav {
   bottom: 0px;

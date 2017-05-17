@@ -76,8 +76,12 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+   #sideInfoHead {
+      position: absolute;
+   }
    #downArrow {
       display: block;
+      transform: rotate(180deg);
    }
 }
 
