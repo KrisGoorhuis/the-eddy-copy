@@ -33,11 +33,10 @@ body {
       line-height: 14px; }
 
 @media screen and (max-width: 768px) {
-  #headImage {
-    height: 500px; }
-    #headImage p {
-      margin: 0px;
-      font-size: 30px; } }
+  #headImage p {
+    margin: 0px;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.5); } }
 
 #sideInfoHead {
   position: fixed;
