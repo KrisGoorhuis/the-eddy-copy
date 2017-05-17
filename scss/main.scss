@@ -44,8 +44,7 @@ body {
          font-size: 30px;
          color: rgba(255, 255, 255, .5);
       }
-   }
-   
+   } 
 }
 
 #sideInfoHead {
@@ -69,6 +68,16 @@ body {
    }
    p {
       margin: 4px;
+   }
+}
+
+#downArrow {
+   display: none;
+}
+
+@media screen and (max-width: 768px) {
+   #downArrow {
+      display: block;
    }
 }
 

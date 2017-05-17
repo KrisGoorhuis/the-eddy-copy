@@ -60,6 +60,13 @@ body {
   #sideInfoHead p {
     margin: 4px; }
 
+#downArrow {
+  display: none; }
+
+@media screen and (max-width: 768px) {
+  #downArrow {
+    display: block; } }
+
 nav {
   bottom: 0px;
   width: 100%;
