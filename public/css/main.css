@@ -66,8 +66,9 @@ body {
 @media screen and (max-width: 768px) {
   #sideInfoHead {
     position: relative;
-    margin-top: 60%;
-    height: 40%; }
+    margin-top: 60vh;
+    height: 40vh;
+    margin-bottom: 0px; }
   #downArrow {
     display: block;
     transform: rotate(180deg); } }
@@ -156,7 +157,8 @@ a {
 
 @media screen and (max-width: 768px) {
   #schedule {
-    padding-top: 30px; }
+    padding-top: 30px;
+    margin-top: 0px; }
     #schedule h1 {
       margin: 0px; }
   #days {
