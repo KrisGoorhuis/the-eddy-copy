@@ -1,4 +1,5 @@
 body {
+   position: absolute;
    margin: 0px;
    top: 0px;
    left: 0px;
@@ -76,24 +77,23 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-   /*
-   body {
-      top: 0px;
-   }
-   #sideInfoHead {
+   
+   #sideInfoHead {  
       position: relative;
+      margin: auto;
+      padding-top: 0px;
       margin-top: 60vh;
       height: 40vh;
       margin-bottom: 0px;
-      width: 100%;
+      width: 60%;
       align-items: center;
-      
+      border-top: 1px solid rgba(255, 255, 255, 0.5);
    }
    #downArrow {
       display: block;
       transform: rotate(180deg);
    }
-} */
+}
 
 nav {
    bottom: 0px;
@@ -128,7 +128,7 @@ nav li {
    #headImage {
       
       p {
-         margin-right: 115px;
+         margin-right: 0px;
       }
    }
    #topNav ul {
@@ -205,7 +205,7 @@ a {
 @media screen and (max-width: 768px) {
    #schedule {
       padding-top: 30px;
-      margin-top: 0px;
+      margin-top: -85vh;
       h1 {
          margin: 0px;
       }
