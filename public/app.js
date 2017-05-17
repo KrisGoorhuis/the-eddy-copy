@@ -23,8 +23,7 @@ $(document).ready(function() {
       
       var windowHeight = $(window).height();
       var newMarginTop = windowHeight-120;
-      $('#sideInfoHead').css('margin-top')
-      $('#schedule').css('margin-top', newMarginTop + "px");
+      //$('#schedule').css('margin-top', newMarginTop + "px");
    }
    
    
