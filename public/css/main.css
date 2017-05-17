@@ -38,6 +38,7 @@ body {
     text-align: center; }
     #headImage p {
       margin: 0px;
+      margin-top: -150px;
       font-size: 30px;
       color: rgba(255, 255, 255, 0.5); } }
 
@@ -69,8 +70,8 @@ body {
     position: relative;
     margin: auto;
     padding-top: 0px;
-    margin-top: 60vh;
-    height: 40vh;
+    margin-top: 70vh;
+    height: 30vh;
     margin-bottom: 0px;
     width: 60%;
     align-items: center;
@@ -164,7 +165,7 @@ a {
 @media screen and (max-width: 768px) {
   #schedule {
     padding-top: 30px;
-    margin-top: -85vh; }
+    margin-top: -79vh; }
     #schedule h1 {
       margin: 0px; }
   #days {
