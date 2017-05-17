@@ -76,6 +76,9 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+   body {
+      top: 0px;
+   }
    #sideInfoHead {
       position: relative;
       margin-top: 60vh;
