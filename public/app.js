@@ -24,10 +24,13 @@ $(document).ready(function() {
       }
    });
    
-   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+   if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
       var windowHeight = $(window).height();
       var newWindowHeight = (windowHeight * 0.70) + 30;
       $('#sideInfoHead').css('margin-top', newWindowHeight + "px");
+      $('#headImage').css('height', windowHeight + "px");
+   } else {
+      $('#headImage').css('height', windowHeight + 100 + "px");
    }
    
    

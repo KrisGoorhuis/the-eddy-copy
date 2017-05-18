@@ -13,7 +13,6 @@ body {
   background-repeat: no-repeat;
   margin-bottom: 0px;
   width: 100%;
-  min-height: 100%;
   top: 0px;
   position: fixed;
   z-index: -1;
@@ -70,7 +69,8 @@ body {
     position: relative;
     margin: auto;
     padding-top: 0px;
-    /* margin-top: 70vh + 60px; <-- Set in jQuery so it doesn't change with address bar going away */
+    padding-bottom: 0px;
+    /* margin-top: 70vh + address bar height;<-- Set in jQuery so it doesn't change with address bar going away */
     height: 30vh;
     margin-bottom: 0px;
     width: 60%;
