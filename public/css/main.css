@@ -291,6 +291,10 @@ a {
   justify-content: center;
   align-items: center; }
 
+@media screen and (max-width: 768px) {
+  h1 {
+    margin-top: 5px; } }
+
 #menusContainerInner {
   width: 50%;
   margin-top: 50px;
@@ -528,6 +532,10 @@ a {
     font-size: 14px; }
   #tastingMenuLayout div {
     margin-bottom: 6px; }
+
+@media screen and (max-width: 768px) {
+  #tastingMenuLayout {
+    width: 95%; } }
 
 #dashedLine {
   border-bottom: 2px dashed black;
