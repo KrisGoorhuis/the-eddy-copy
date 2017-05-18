@@ -14,6 +14,8 @@ body {
    background-repeat: no-repeat;
    margin-bottom: 0px;
    /* Height/width set in jQuery so it doesn't change as the address bar pops up. */
+   height: 100%;
+   width: 100%;
    top: 0px;
    position: fixed;
    z-index: -1;
@@ -39,6 +41,8 @@ body {
 @media screen and (max-width: 768px) {
    #headImage {
       text-align: center;
+      height: 1280px;
+      width: 1980px;
       p {
          margin: 0px;
          margin-top: -150px;
