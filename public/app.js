@@ -8,9 +8,11 @@ $(document).ready(function() {
    window.scrollTo(0,0);
 
    function resizeNavMargin() {
-      var windowHeight = $(window).height();
-      var newMarginTop = windowHeight-120;
-      $('#topNav').css('margin-top', newMarginTop + "px");
+      if if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) === false) {
+          var windowHeight = $(window).height();
+         var newMarginTop = windowHeight-120;
+         $('#topNav').css('margin-top', newMarginTop + "px");
+      }  
    }
    
    resizeNavMargin();
