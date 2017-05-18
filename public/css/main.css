@@ -35,8 +35,8 @@ body {
 @media screen and (max-width: 768px) {
   #headImage {
     text-align: center;
-    height: 568;
-    width: 320; }
+    height: 568px;
+    width: 320px; }
     #headImage p {
       margin: 0px;
       margin-top: -150px;
