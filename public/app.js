@@ -29,11 +29,11 @@ $(document).ready(function() {
       var windowWidth = $(window).width();
       var newWindowHeight = (windowHeight * 0.70) + 30;
       $('#sideInfoHead').css('margin-top', newWindowHeight + "px");
-     // $('#headImage').css('height', windowHeight + "px");
-    //  $('#headImage').css('width', windowWidth);
+      //$('#headImage').css('height', windowHeight + "px");
+      //$('#headImage').css('width', windowWidth);
    } else {
-     // $('#headImage').css('height', windowHeight + 100 + "px");
-     // $('#headImage').css('width', windowWidth);
+      //$('#headImage').css('height', windowHeight + 100 + "px");
+      //$('#headImage').css('width', windowWidth);
    }
    
    
