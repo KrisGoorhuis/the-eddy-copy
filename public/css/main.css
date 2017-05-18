@@ -164,8 +164,7 @@ a {
 
 @media screen and (max-width: 768px) {
   #schedule {
-    padding-top: 30px;
-    margin-top: -140%; }
+    padding-top: 30px; }
     #schedule h1 {
       margin: 0px; }
   #days {
