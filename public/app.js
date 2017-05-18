@@ -8,25 +8,26 @@ $(document).ready(function() {
    window.scrollTo(0,0);
 
    function resizeNavMargin() {
-      if if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) === false) {
-          var windowHeight = $(window).height();
+      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) === false) {
+         var windowHeight = $(window).height();
          var newMarginTop = windowHeight-120;
          $('#topNav').css('margin-top', newMarginTop + "px");
-      }  
+      }
    }
    
+   console.log(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))
    resizeNavMargin();
    
    $(window).on('resize', function() {
-      resizeNavMargin();
+      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) === false) {
+         resizeNavMargin();
+      }
    });
    
    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-   // You are in mobile browser
-      
       var windowHeight = $(window).height();
-      var newMarginTop = windowHeight-120;
-      //$('#schedule').css('margin-top', newMarginTop + "px");
+      var newWindowHeight = (windowHeight * 0.70) + 30;
+      $('#sideInfoHead').css('margin-top', newWindowHeight + "px");
    }
    
    
