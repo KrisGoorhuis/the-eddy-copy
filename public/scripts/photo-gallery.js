@@ -22,9 +22,16 @@
       ];
       
       this.openBrowserToSelection = function(index) {
-         this.browserIsOpen = true;
-         this.imageOffset = (29 - (44*index));
-         this.imageIndex = index;
+         if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) === false ) { // Use desktop photo browser - haven't made it work on mobile.
+            this.browserIsOpen = true;
+            this.imageOffset = (29 - (44*index));
+            this.imageIndex = index;
+            
+         } else {
+            $('#image-' + index).css('height', '100%');
+           // $('#image-' + index).css()
+         }
+         
          
          $('#photoBrowser').hide().fadeIn(300); // It doesn't fade in if it's not fading in from a hidden state. Which ng-show=false doesn't count as, I guess. So .hide()!
          $('#galleryContainer').css('pointer-events', 'none');

@@ -554,7 +554,7 @@
       <div id="galleryContainer">
          <div class="image" ng-repeat="image in gallery.images">
             <a ng-click="gallery.openBrowserToSelection($index)"><div></div></a>
-            <img ng-src="{{image}}">
+            <img ng-src="{{image}}" ng-attr-id="{{ 'image-' + $index}}">
          </div>
       </div>
       <photo-browser ng-show="gallery.checkBrowserOpen()"></photo-browser>

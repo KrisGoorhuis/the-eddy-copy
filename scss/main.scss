@@ -1171,8 +1171,8 @@ a {
    }
    #photoLineup {
       img {
-         width: 100vw;
-         pointer-events: none;
+         width: 60vw;
+         pointer-events: none; // Desktop photo browser doesn't work on mobile, so this disables it for now.
       }
    }
 }
