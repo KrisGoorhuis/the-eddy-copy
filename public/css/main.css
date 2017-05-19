@@ -823,15 +823,20 @@ a {
 
 @media screen and (max-width: 768px) {
   #galleryContainer {
-    width: 100%; }
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px; }
   .image {
     width: 100%;
     height: auto;
+    margin: 10px;
     margin-left: 0px;
     margin-right: 0px; }
     .image img {
       width: 100%;
-      height: auto; } }
+      height: auto; }
+    .image div {
+      height: 0px; } }
 
 #photoBrowser {
   position: fixed;
@@ -918,5 +923,4 @@ a {
   #photoLineupContainer {
     justify-content: center; }
   #photoLineup img {
-    width: 60vw;
-    pointer-events: none; } }
+    width: 100vw; } }

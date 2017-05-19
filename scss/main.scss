@@ -1052,15 +1052,21 @@ a {
 @media screen and (max-width: 768px) {
    #galleryContainer {
       width: 100%;
+      padding-top: 10px;
+      padding-bottom: 10px;
    }
    .image {
       width: 100%;
       height: auto;
+      margin: 10px;
       margin-left: 0px;
       margin-right: 0px;
       img {
          width: 100%;
          height: auto;
+      }
+      div {
+         height: 0px;
       }
    }
 }
@@ -1171,8 +1177,7 @@ a {
    }
    #photoLineup {
       img {
-         width: 60vw;
-         pointer-events: none; // Desktop photo browser doesn't work on mobile, so this disables it for now.
+         width: 100vw;
       }
    }
 }

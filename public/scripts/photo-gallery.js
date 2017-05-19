@@ -28,7 +28,8 @@
             this.imageIndex = index;
             
          } else {
-            $('#image-' + index).css('height', '100%');
+            // Mobile image handling. Nothing functioning righ tnow.
+           // $('#image-' + index).css('height', '100%');
            // $('#image-' + index).css()
          }
          
