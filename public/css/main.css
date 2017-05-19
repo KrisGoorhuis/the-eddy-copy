@@ -1,5 +1,6 @@
 body {
   position: absolute;
+  background-color: #fafafa;
   margin: 0px;
   top: 0px;
   left: 0px;
@@ -69,6 +70,7 @@ body {
 @media screen and (max-width: 768px) {
   #sideInfoHead {
     position: relative;
+    z-index: 20;
     margin: auto;
     padding-top: 0px;
     padding-bottom: 0px;
