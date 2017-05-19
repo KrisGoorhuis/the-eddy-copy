@@ -27,7 +27,7 @@ $(document).ready(function() {
    if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
       var windowHeight = $(window).height();
       var windowWidth = $(window).width();
-      var newWindowHeight = (windowHeight * 0.70) + 30;
+      var newWindowHeight = (windowHeight * 0.70) + 0;
       $('#sideInfoHead').css('margin-top', newWindowHeight + "px");
       //$('#headImage').css('height', windowHeight + "px");
       //$('#headImage').css('width', windowWidth);
