@@ -918,4 +918,5 @@ a {
   #photoLineupContainer {
     justify-content: center; }
   #photoLineup img {
-    width: 100vw; } }
+    width: 100vw;
+    pointer-events: none; } }
