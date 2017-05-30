@@ -15,7 +15,6 @@ $(document).ready(function() {
       }
    }
    
-   console.log(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))
    resizeNavMargin();
    
    $(window).on('resize', function() {
@@ -34,7 +33,6 @@ $(document).ready(function() {
    } else {
       $('#headImage').css('height', windowHeight + 100 + "px");
       $('#headImage').css('width', windowWidth + "px");
-      console.log("made it here")
    }
    
    
