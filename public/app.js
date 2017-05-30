@@ -32,8 +32,9 @@ $(document).ready(function() {
       //$('#headImage').css('height', windowHeight + "px");
       //$('#headImage').css('width', windowWidth);
    } else {
-      //$('#headImage').css('height', windowHeight + 100 + "px");
-      //$('#headImage').css('width', windowWidth);
+      $('#headImage').css('height', windowHeight + 100 + "px");
+      $('#headImage').css('width', windowWidth + "px");
+      console.log("made it here")
    }
    
    
