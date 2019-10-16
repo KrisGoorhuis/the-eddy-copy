@@ -1,19 +1,28 @@
 {
   "name": "the-eddy-copy",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a replica of an existing website (https://www.theeddynyc.com/) - or, at least, what is used to look like.",
   "main": "server.js",
-  "dependencies": {
-    "express": "^4.17.1"
+  "engines": {
+    "node": "10.3.0"
   },
-  "devDependencies": {
+  "dependencies": {
+    "express": "^4.17.1",
     "node-sass": "^4.12.0"
   },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "sass": "node-sass -w scss/main.scss -o public/css/"
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KrisGoorhuis/the-eddy-copy.git"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KrisGoorhuis/the-eddy-copy/issues"
+  },
+  "homepage": "https://github.com/KrisGoorhuis/the-eddy-copy#readme"
 }

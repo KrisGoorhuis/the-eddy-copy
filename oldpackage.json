@@ -1,0 +1,19 @@
+{
+  "name": "the-eddy-copy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "sass": "node-sass -w scss/main.scss -o public/css/"
+  },
+  "author": "",
+  "license": "ISC"
+}
